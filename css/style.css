@@ -37,7 +37,7 @@ ul li:hover{background-color: white;}
     padding-top: 50px;padding-left: 20px;}
 #headertilte:hover{color: limegreen;}
 
-/* Body ..........................................................*/
+/* ...................... Body ....................................*/
 /* Our Team......... */
 #bodyTitle{width: 100%;text-align:center;height: 100px;}
 #bodyTitle h2{font-size: larger;margin-top: 100px;font-size: xx-large;font-family: Arial, Helvetica, sans-serif;}
@@ -54,11 +54,32 @@ ul li:hover{background-color: white;}
 #ourworkdiv{width: 100%;height: 550px;margin-top: 60px;background-color:rgb(46, 43, 43);}
 #ourworkdiv div{width: 295px;height: 450px;display: inline-block;
     margin-left: 5px;margin-right: 5px;margin-top: 55px;}
-#ourworkparagraph{margin-left: 20px;padding-top: 45px;padding-left: 10px;background-color: none;}
-#ourworkparagraph h2{font-size: 30px;color: white;}
-#ourworkparagraph p{font-size: 21px;color: white;padding-top: 20px;}
+#ourworkparagraph{margin-left: 20px;background-color: none;}
+#ourworkparagraph h2{font-size: 32px;color: white;padding-top: 40px;padding-left: 10px;}
+#ourworkparagraph p{font-size: 20px;font-family:arial; color: white;padding-top: 20px;padding-left: 10px;}
 #ourworkdiv div img{width: 300px;height: 200px;margin-right: 70px;}
 .ourworksection{background-color: white;padding-right: 5px;}
-.ourworksection h2{padding-top:10px;padding-left: 10px;color: black;font-size: 26px;}
+.ourworksection h2{padding-top:10px;padding-left: 10px;color: black;font-size: 28px;}
 .ourworksection h3{padding-top:10px;padding-left: 10px;color: black;font-size: 22px;padding-top: 12px;}
 .ourworksection p{padding-top:10px;padding-left: 10px;color: black;font-size: 18px;padding-top: 19px;}
+
+/* ..................... Pricing Section ............................. */
+#pricingtitle{font-size: 30px;margin-top: 80px;text-align: center;}
+#pricingpara{font-size: 20px;margin-top: 25px;text-align: center;}
+
+.pricingdivs{width: 400px;height: 547px;display: inline-block;margin-top: 30px; border: 1px solid gray;
+    margin-left: 10px;}
+.pricingdivs .one{width: 100%;height: 80px;background-color: black;}
+.pricingdivs .one p{font-size: 25px;text-align: center;padding-top: 25px;color: white;}
+#middleone{background-color: gray;}
+.pricingdivs p b{font-weight: bold;}/*Bolding some text*/
+.pricingdivs p{font-size: 20px;text-align: center;padding-top: 25px;padding-bottom: 10px;}
+#permonth{padding-bottom: 15px;padding-top: 5px; color: rgb(156, 152, 152);}
+.pricingdivs .two{width: 100%;height: 80px;background-color: rgb(231, 225, 225);text-align: center;}
+.pricingdivs .two button{font-size: 25px; font-family: inherit; margin-top: 30px;border-radius: 3px;
+    text-decoration: none;color: white;background-color: #009688;padding: 7px;padding-left: 15px;
+    padding-right: 15px;border: hidden;}
+.pricingdivs:hover{box-shadow: 2px 2px 2px 2px grey;}
+.pricingdivs .two button:hover{background-color: gray;color: black;}
+
+/* ...................... Contact Us.................................. */
