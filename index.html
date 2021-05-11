@@ -7,22 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <title>CssPractice</title>
 </head>
 
+<!-- ...................................Body......................... -->
 <body>
+    <!-- .............................Header......................... -->
     <header>
         <div id="navBar">
             <nav>
                 <ul>
-                    <li><a href="" id='Logo'>Logo</a></li>
+                    <li><div id="logoBox"><i id="logo" class="fas fa-home"></i>Logo</div></li>
                     <li><a href="" class="navItem">Team</a></li>
                     <li><a href="" class="navItem">Work</a></li>
                     <li><a href="" class="navItem">Price</a></li>
                     <li><a href="" class="navItem">Contact</a></li>
                     <li>
                         <div id="dropDown">
-                            <button id="dropdownbtn">Dropdown</button>
+                            <button id="dropdownbtn">Dropdown <i id="dropdownArrow" class="fas fa-sort-down"></i></button>
                             <div id="dropContent">
                                 <a href="#" class="content">Link</a>
                                 <a href="#" class="content">Link</a>
@@ -30,9 +33,7 @@
                             </div>
                         </div>
                     </li>
-                    <li id="searchBox"><img
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT--W18wy6a2ieVL6AoUwTx7OwzuY1-ncqVeA&usqp=CAU"
-                            alt="SearchIcon" id="searchIcon"></li>
+                    <li id="searchBox"><i id="searchIcon" class="fas fa-search"></i></li>
                 </ul>
             </nav>
         </div>
@@ -41,10 +42,9 @@
             <div id="headerTitleBox"><a href="" id="headertilte">Learn W3.css</a></div>
         </div>
     </header>
-    <!-- ......................... Body .............................. -->
-    <!-- ....................... OUR TEAM .......................... -->
-
-    <body>
+    <!-- ......................... Main .............................. -->
+    <main id="main">
+        <!-- ....................... OUR TEAM .......................... -->
         <div id="bodyTitle">
             <h2>OUR TEAM</h2>
             <p>Meet the team - our office rats:</p>
@@ -110,6 +110,17 @@
                 <p>Blablabla<br /></p>
             </div>
         </div>
+        <button id="sideBarBtn" onclick="openSideBar()"><i class="fas fa-plus" id="sideBarIcon"></i></button>
+
+        <!-- ...................................Side Bar............................ -->
+        <div id="sideBar" class="mySideBar">
+            <a href="#" id="sideBarClose" onclick="closeSideBar()">Close<i class="fas fa-times" id="barInsideIcon"></i></a>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+        </div>
 
         <!-- ....................... PRICING SECTION ....................... -->
         <h2 id="pricingtitle">PRICING</h2>
@@ -126,7 +137,7 @@
             <hr>
             <p><b>$</b> 10<br /></p>
             <p id="permonth">per month <br /></p>
-            <div class="two"><button>Sign Up</button></div>
+            <div class="two" ><button><i class="fas fa-check"></i>Sign Up</button></div>
         </div>
         <div class="pricingdivs" id="middelpricingdiv">
             <div class="one" id="middleone"><p>Pro</p></div>
@@ -140,7 +151,7 @@
             <hr>
             <p><b>$</b> 25<br /></p>
             <p id="permonth">per month <br /></p>
-            <div class="two"><button>Sign Up</button></div>
+            <div class="two" ><button><i class="fas fa-check"></i>Sign Up</button></div>
         </div>
         <div class="pricingdivs">
             <div class="one"><p>Premium</p></div>
@@ -154,9 +165,23 @@
             <hr>
             <p><b>$</b> 50<br /></p>
             <p id="permonth">per month <br /></p>
-            <div class="two"><button>Sign Up</button></div>
+            <div class="two" ><button><i class="fas fa-check"></i>Sign Up</button></div>
         </div>
-    </body>
+    </main>
+
+    <!--............................. Script .......................-->
+    <script>
+        //.......... side Bar ..... -->
+        function openSideBar(){
+            let openBar = document.getElementById(sideBar);
+            openBar.style.width = "250px";
+            console.log('opened');
+        }
+        function closeSideBar(){
+            document.getElementById(sideBar).style.width = "0px";
+            console.log('closed');
+        }
+    </script>
 </body>
 
 </html>
