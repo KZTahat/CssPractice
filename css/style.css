@@ -87,9 +87,10 @@ ul li a:hover{background-color: white;color: black;}
 .pricingdivs p{font-size: 20px;text-align: center;padding-top: 25px;padding-bottom: 10px;}
 #permonth{padding-bottom: 15px;padding-top: 5px; color: rgb(156, 152, 152);}
 .pricingdivs .two{width: 100%;height: 80px;background-color: #f0f0f0 ;text-align: center;}
-.pricingdivs .two button{font-size: 15px;margin-top: 30px;border-radius: 3px;
-    text-decoration: none;color: white;background-color: #009688;padding: 8px 15px 0px 15px;
+.pricingdivs .two button{font-size: 15px;margin-top: 20px;border-radius: 3px;
+    text-decoration: none;color: white;background-color: #009688;width: 125px;height: 45px;
     border: hidden;}
+.two i{margin-right: 7px;}
 .pricingdivs:hover{box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
 .pricingdivs .two button:hover{background-color: gray;color: black;}
 
@@ -121,8 +122,16 @@ ul li a:hover{background-color: white;color: black;}
 
 /* .......................... THE FOOTER .............................. */
 footer{width: 100%;height: 250px;background-color: black;margin-top: -2px;}
-footer h2{color: white;text-align: center;padding: 60px 0px 10px 0px;font-size: 20px;}
-footer a{font-size: 25px;padding-left: 10px;background-color: #009688;}
-#firstFooterIcon{margin-left: 580px;}
-#lastFootericon{float: right;margin-right: 30px;}
-/* footer a:first-child{margin: 500px;color: white;} */
+#footerDiv{width: 60%;margin-left: 500px;}
+#footerDiv h2{color: white;padding: 57px 0px 20px 87px;font-size: 18px;}
+.footerIcons{font-size: 25px;padding: 6px 15px;background-color: #009688;}
+.footerIcons:hover{background-color: gray;color: black;}
+#footerDiv i{font-size: 18px;color: white;}
+#lastFootericon{float: right;margin-right: 30px;width: 50px;height: 50px;padding: 15px 15px;}
+#lastFootericon:hover{background-color: gray;}
+#goToTop{color: white;float: right;background-color: #009688;padding: 10px 10px;
+    margin-right: 10px;display: none;}
+#lastFootericon:hover #goToTop{display: block;}
+#lastIcon{font-size: 40px;}
+#footerDiv p{color: white;font-size: 15px;margin: 22px 0px 0px 62px;}
+#w3Link{color: white;}
